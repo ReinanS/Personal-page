@@ -4,187 +4,190 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Reinan Santos</title>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/styles.css">
 	</head>
 	<body>
 		<!-- NAVBAR   -->
 		<header>
-			<nav>
-				<a href="#home">Início</a>
-				<a href="#resume">Resumo</a>
-				<a href="#portfolio">Portfólio</a>
-				<a href="#contact">Contato</a>
+			<nav class="navbar">
+				<a href="#home" class="active">INÍCIO</a>
+				<a href="#resume">RESUMO</a>
+				<a href="#portfolio">PORTFÓLIO</a>
+				<a href="#contact">CONTATO</a>
 			</nav>
 		</header>
-		<!-- HOME   -->
-		<div id="home">
-			<div class="home-content">
-				<h4>Bem-Vindo ao meu portifólio</h4>
-				<h1>O trabalhado de um desenvolvedor não é meramente escrever linhas de código, mas resolver problemas.</h1>
-				<p>Sou um jovem estudante, iniciando no desenvolvimento Web e mobile.</p>
-				<button>Começar</button>
-			</div>
-			<div class="home-image">
-				<!-- Adição de uma foto minha -->
-				<img>
-			</div>
-		</div>
-		<!-- RESUME   -->
-		<div id="resume">
-			<div class="resume-text">
-				<h4>Olá, me chamo Reinan Santos</h4>
-				<p><strong>Desenvolvedor web amante da literatura.</strong></p>
-				<p>E egresso do curso Análise e Desenvolvimento de Sistemas no IFBA, tenho admiração pelo designer e frontend, mas minha paixão está no back cuidando da regra de negócio e da lógica aplicada no sistema.</p>
-			</div>
-			<div class="resume-information">
-				<div>
-					<i></i> <p>Nome: Reinan Santos</p>
+		<div id="content">
+			<!-- HOME   -->
+			<div id="home">
+				<div class="home-content">
+					<h4>Bem-Vindo ao meu portifólio</h4>
+					<h1>O trabalhado de um desenvolvedor não é meramente escrever linhas de código, mas resolver problemas.</h1>
+					<p>Sou um jovem estudante, iniciando no desenvolvimento Web e mobile.</p>
+					<button>Começar</button>
 				</div>
-				<div>
-					<i></i> <p>Localização: Itinga, Lauro de Freitas, Bahia, Brasil</p>
-				</div>
-				<div>
-					<i></i> <p>Email: reinandesouza01@gmail.com</p>
-				</div>
-				<div>
-					<i></i> <p>Idade: 21 anos</p>
-				</div>
-				<div>
-					<i></i> <p>Graduação: Análise e Desenvolvimento de Sistemas</p>
-				</div>
-				<div>
-					<i></i> <p>Celular: (71) 99631-7279</p>
-				</div>
-			</div>
-			<div class="social-network">
-				<!-- Adição das logos e links das redes sociais -->
-				facebook
-				linkedin
-				github
-			</div>
-			<!-- Opcao de Baixar o curriculum -->
-			<button class="cv">Baixar CV</button>
-			<div class="education">
-				<h3>Educação</h3>
-				<div class="card">
-					<h4>IFBA - Instituto Federal da Bahia</h4>
-					<span class="item">2022</span>
-					<span class="item">Previsao de Conclusão</span>
-					<p>Tecnólogo, Análise e Desenvolvimento de Sistemas</p>
-				</div>
-				<div class="card">
-					<h4>Curso de PHP</h4>
-					<span class="item">Outubro de 2020</span>
-					<p>Node Studio Treinamentos</p>
-				</div>
-				<div class="card">
-					<h4>Reaprendizagem Criativa</h4>
-					<span class="item">Outubro de 2020</span>
-					<p>Keep Learning School</p>
-				</div>
-				<div class="card">
-					<h4>Front-End Web UI Frameworks and Tools: Bootstrap 4</h4>
-					<span class="item">Agosto de 2020</span>
-					<p>Coursera</p>
-				</div>
-			</div>
-			<div class="experience">
-				<h3>Experiência</h3>
-				<div class="card">
-					<h4>Estágio</h4>
-					<span class="item">Julho 2020 - Atual</span>
-					<span class="item">Computação Brasil</span>
-					<p>- Desenvolvimento de módulos para a plataforma de e-commerce Magento 2 com PHP e MySql.</p>
-					<p>- Desenvolvimento mobile nativo com Xamarin.</p>
-				</div>
-			</div>
-			<div class="general-skills">
-				<h3>Habilidades Gerais</h3>
-				<div class="card">
-					<i class="logo"></i>
-					<h4>HTML</h4>
-					<p>1 ano de experiência em projetos individuais.</p>
-				</div>
-				<div class="card">
-					<i class="logo"></i>
-					<h4>CSS</h4>
-					<p>1 ano de experiência em projetos individuais.</p>
-				</div>
-				<div class="card">
-					<i class="logo"></i>
-					<h4>PHP</h4>
-					<p>3 meses de experiência na construção de módulos Magento 2.</p>
-				</div>
-				<div class="card">
-					<i class="logo"></i>
-					<h4>C</h4>
-					<p>1 ano e 6 meses de experiência em projetos acadêmicos.</p>
-				</div>
-			</div>
-		</div>
-		<!-- PORTFOLIO   -->
-		<div id="portfolio">
-			<div class="card">
-				<h4>Ecoleta</h4>
-				<!-- Imagem do Projeto-->
-				<div>
+				<div class="home-image">
+					<!-- Adição de uma foto minha -->
 					<img>
 				</div>
-				<span>HTML</span>
-				<span>CSS</span>
-				<span>JavaScript</span>
-				<p>Aplicação Web para ajudar pessoas a encontrarem pontos de coleta de materias recicláveis.</p>
 			</div>
-			<div class="card">
-				<h4>Getkcal</h4>
-				<!-- Imagem do Projeto-->
-				<div>
-					<img>
+			<!-- RESUME   -->
+			<div id="resume">
+				<div class="resume-text">
+					<h4>Olá, me chamo Reinan Santos</h4>
+					<p><strong>Desenvolvedor web amante da literatura.</strong></p>
+					<p>E egresso do curso Análise e Desenvolvimento de Sistemas no IFBA, tenho admiração pelo designer e frontend, mas minha paixão está no back cuidando da regra de negócio e da lógica aplicada no sistema.</p>
 				</div>
-				<span>HTML</span>
-				<span>CSS</span>
-				<span>JavaScript</span>
-				<p>Ajuda as pessoas a calcularem a sua taxa metabólica basal, para o ganho e a perca de massa muscular.</p>
+				<div class="resume-information">
+					<div>
+						<i></i> <p>Nome: Reinan Santos</p>
+					</div>
+					<div>
+						<i></i> <p>Localização: Itinga, Lauro de Freitas, Bahia, Brasil</p>
+					</div>
+					<div>
+						<i></i> <p>Email: reinandesouza01@gmail.com</p>
+					</div>
+					<div>
+						<i></i> <p>Idade: 21 anos</p>
+					</div>
+					<div>
+						<i></i> <p>Graduação: Análise e Desenvolvimento de Sistemas</p>
+					</div>
+					<div>
+						<i></i> <p>Celular: (71) 99631-7279</p>
+					</div>
+				</div>
+				<div class="social-network">
+					<!-- Adição das logos e links das redes sociais -->
+					facebook
+					linkedin
+					github
+				</div>
+				<!-- Opcao de Baixar o curriculum -->
+				<button class="cv">Baixar CV</button>
+				<div class="education">
+					<h3>Educação</h3>
+					<div class="card">
+						<h4>IFBA - Instituto Federal da Bahia</h4>
+						<span class="item">2022</span>
+						<span class="item">Previsao de Conclusão</span>
+						<p>Tecnólogo, Análise e Desenvolvimento de Sistemas</p>
+					</div>
+					<div class="card">
+						<h4>Curso de PHP</h4>
+						<span class="item">Outubro de 2020</span>
+						<p>Node Studio Treinamentos</p>
+					</div>
+					<div class="card">
+						<h4>Reaprendizagem Criativa</h4>
+						<span class="item">Outubro de 2020</span>
+						<p>Keep Learning School</p>
+					</div>
+					<div class="card">
+						<h4>Front-End Web UI Frameworks and Tools: Bootstrap 4</h4>
+						<span class="item">Agosto de 2020</span>
+						<p>Coursera</p>
+					</div>
+				</div>
+				<div class="experience">
+					<h3>Experiência</h3>
+					<div class="card">
+						<h4>Estágio</h4>
+						<span class="item">Julho 2020 - Atual</span>
+						<span class="item">Computação Brasil</span>
+						<p>- Desenvolvimento de módulos para a plataforma de e-commerce Magento 2 com PHP e MySql.</p>
+						<p>- Desenvolvimento mobile nativo com Xamarin.</p>
+					</div>
+				</div>
+				<div class="general-skills">
+					<h3>Habilidades Gerais</h3>
+					<div class="card">
+						<i class="logo"></i>
+						<h4>HTML</h4>
+						<p>1 ano de experiência em projetos individuais.</p>
+					</div>
+					<div class="card">
+						<i class="logo"></i>
+						<h4>CSS</h4>
+						<p>1 ano de experiência em projetos individuais.</p>
+					</div>
+					<div class="card">
+						<i class="logo"></i>
+						<h4>PHP</h4>
+						<p>3 meses de experiência na construção de módulos Magento 2.</p>
+					</div>
+					<div class="card">
+						<i class="logo"></i>
+						<h4>C</h4>
+						<p>1 ano e 6 meses de experiência em projetos acadêmicos.</p>
+					</div>
+				</div>
 			</div>
-		</div>
-		<!-- CONTACT   -->
-		<div id="contact">
-			<h3>Entre em contato comigo.</h4>
-			<p>Se está procurando alguém curioso e autodidata para agregar a sua equipe, me liga.</p>
-			<h3>Não disponível no momento para contratações.</h3>
-			<div class="card">
-				<i class="logo"></i>
-				<h4>Whatsapp</h4>
-				<p>(71) 99631-7279</p>
-			</div>
-			<div class="card">
-				<i class="logo"></i>
-				<h4>Email</h4>
-				<p>reinandesouza01@gmail.com</p>
-			</div>
-			<div class="card">
-				<i class="logo"></i>
-				<h4>Localização</h4>
-				<p>Lauro de Freitas, Bahia, Brasil.</p>
-			</div>
-			<h4>Contato</h4>
-			<div class="card">
-				<!-- Mapa da minha localização -->
-				<map>
-					<area shape="default" coords="-12.8905201, -38.3455045, 22" />
-				</map>
-			</div>
-			<form>
+			<!-- PORTFOLIO   -->
+			<div id="portfolio">
 				<div class="card">
-					<input type="text" id="full-name" name="full-name" placeholder="Seu Nome Completo" required />
-					<input type="email" id="email-address" name="email-address" placeholder="Endereço de Email" required />
-					<input type="tel" id="phone" placeholder="Telefone (Opcional)" />
+					<h4>Ecoleta</h4>
+					<!-- Imagem do Projeto-->
+					<div>
+						<img>
+					</div>
+					<span>HTML</span>
+					<span>CSS</span>
+					<span>JavaScript</span>
+					<p>Aplicação Web para ajudar pessoas a encontrarem pontos de coleta de materias recicláveis.</p>
 				</div>
-				<dv class="card">
-					<textarea id="message" name="message" placeholder="Digite uma Mensagem..."></textarea>
-					<button type="submit" id="submit" class="submit-button">Enviar Mensagem</button>
-				</dv>
-			</form>
+				<div class="card">
+					<h4>Getkcal</h4>
+					<!-- Imagem do Projeto-->
+					<div>
+						<img>
+					</div>
+					<span>HTML</span>
+					<span>CSS</span>
+					<span>JavaScript</span>
+					<p>Ajuda as pessoas a calcularem a sua taxa metabólica basal, para o ganho e a perca de massa muscular.</p>
+				</div>
+			</div>
+			<!-- CONTACT   -->
+			<div id="contact">
+				<h3>Entre em contato comigo.</h4>
+				<p>Se está procurando alguém curioso e autodidata para agregar a sua equipe, me liga.</p>
+				<h3>Não disponível no momento para contratações.</h3>
+				<div class="card">
+					<i class="logo"></i>
+					<h4>Whatsapp</h4>
+					<p>(71) 99631-7279</p>
+				</div>
+				<div class="card">
+					<i class="logo"></i>
+					<h4>Email</h4>
+					<p>reinandesouza01@gmail.com</p>
+				</div>
+				<div class="card">
+					<i class="logo"></i>
+					<h4>Localização</h4>
+					<p>Lauro de Freitas, Bahia, Brasil.</p>
+				</div>
+				<h4>Contato</h4>
+				<div class="card">
+					<!-- Mapa da minha localização -->
+					<map>
+						<area shape="default" coords="-12.8905201, -38.3455045, 22" />
+					</map>
+				</div>
+				<form>
+					<div class="card">
+						<input type="text" id="full-name" name="full-name" placeholder="Seu Nome Completo" required />
+						<input type="email" id="email-address" name="email-address" placeholder="Endereço de Email" required />
+						<input type="tel" id="phone" placeholder="Telefone (Opcional)" />
+					</div>
+					<dv class="card">
+						<textarea id="message" name="message" placeholder="Digite uma Mensagem..."></textarea>
+						<button type="submit" id="submit" class="submit-button">Enviar Mensagem</button>
+					</dv>
+				</form>
+			</div>
 		</div>
 	</body>
 </html> 

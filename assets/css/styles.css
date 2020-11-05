@@ -6,28 +6,34 @@
 }
 
 :root {
-	--red: #dc3545;
+	--red: #ef0730;
 	--white: #fff;
 	--black: #121110;
-	--gray: #f7f7f7;
-	--light-gray: #f8f8ff;
+	--gray: #e6e5e5;
+	--light-gray: #f2f2f5;
 } 
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 2.5rem 6rem;
+	/*background-color: var(--gray);*/
+	background-color: var(--black);
+	font-size: 1rem;
+	line-height: 1.5;
+}
 
 a {
 	text-decoration: none;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-	padding: 2.5rem 6rem;
-	background-color: var(--gray);
+p {
 	font-size: 1rem;
+	font-weight: normal;
 }
-
 
 /*  NAVBAR */
 header {
-	background-color: var(--white);
+	background-color: var(--light-gray);
 	margin-bottom: 2rem;
 }
 
@@ -36,6 +42,7 @@ header a {
 }
 
 .navbar {
+	padding: 0 3rem;
 	width: 50%;
 
 	display: flex;
@@ -49,9 +56,96 @@ header a {
 }
 
 .navbar a:hover{
-	color: red;
+	color: var(--red);
 }
 
 .navbar .active{
-	color: red;
+	color: var(--red);
+}
+
+
+/*  HOME */
+#home {
+	
+	padding: 4rem 6rem 4rem 4rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home-content {
+	margin-right: 4rem;
+}
+
+.home-content h1 {
+	margin: 2rem 0;
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;	
+}
+
+.home-content span {
+	color: var(--red);
+}
+
+.home-image img {
+	width: 100%;
+  	height: auto;
+	border-radius: 50%;
+}
+
+/*#home button {
+	margin-top: 2.5rem;
+} */
+
+button {
+	margin-top: 2.5rem;
+	padding: 0.5rem 1.2rem;
+	color: var(--white);
+	font-weight: bold;
+	font-size: 1.1rem;
+	background-color: var(--red);
+}
+
+/*  RESUME*/
+#resume {
+	background-color: var(--light-gray);
+	padding: 4rem 6rem 4rem 4rem;
+}
+
+.resume-text h4,
+.resume-text p {
+	margin-bottom: 2rem;
+}
+
+.resume-data {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-row-gap: 1rem;
+	justify-content: space-between;
+}
+
+.icon {
+	display: flex;
+	align-items: ;
+}
+
+.icon .fas {
+	font-size: 1.1rem;
+	margin-right: 0.5rem;
+	color: var(--red);
+}
+
+.social-network {
+	margin-top: 4rem;
+}
+
+.social-network .fab {
+	padding: 0.8rem;
+	margin-right: 1rem;
+	font-size: 1.4rem;
+	background-color: var(--white);
+	color: var(--black);
+	
 }

@@ -13,15 +13,6 @@
 	--light-gray: #f2f2f5;
 } 
 
-body {
-	font-family: 'Roboto', sans-serif;
-	padding: 2.5rem 6rem;
-	/*background-color: var(--gray);*/
-	background-color: var(--black);
-	font-size: 1rem;
-	line-height: 1.5;
-}
-
 a {
 	text-decoration: none;
 }
@@ -31,14 +22,36 @@ p {
 	font-weight: normal;
 }
 
+hr {
+	border: 1px solid black;
+}
+
+
 /*  NAVBAR */
 header {
-	background-color: var(--light-gray);
+	background-color: var(--white);
 	margin-bottom: 2rem;
 }
 
 header a {
 	color: var(--black);
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 2.5rem 6rem;
+	/*background-color: var(--gray);*/
+	background-color: var(--gray);
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+#resume,
+#home,
+#portfolio,
+#contact {
+	padding: 4rem 6rem 4rem 4rem;
 }
 
 .navbar {
@@ -63,12 +76,12 @@ header a {
 	color: var(--red);
 }
 
+#content {
+	background-color: var(--light-gray);
+}
 
 /*  HOME */
 #home {
-	
-	padding: 4rem 6rem 4rem 4rem;
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -109,11 +122,6 @@ button {
 }
 
 /*  RESUME*/
-#resume {
-	background-color: var(--light-gray);
-	padding: 4rem 6rem 4rem 4rem;
-}
-
 .resume-text h4,
 .resume-text p {
 	margin-bottom: 2rem;
@@ -147,5 +155,53 @@ button {
 	font-size: 1.4rem;
 	background-color: var(--white);
 	color: var(--black);
+}
+
+.education {
+	margin-top: 5rem;
+}
+
+.education h3 {
 	
 }
+
+.education h3,
+#portfolio h3 {
+	margin-bottom: 2rem;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+.group-cards {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 1rem 1rem;
+
+}
+
+.card {
+	background-color: var(--white);
+	padding: 1rem;
+}
+
+.card .fas,
+.card .fab {
+	color: var(--red);
+	font-size: 1.8rem;
+
+	margin-bottom: 1.5rem;
+}
+
+.card .item {
+	font-size: 0.9rem;
+	color: var(--red);
+} 
+
+.card p {
+	margin-top: 1rem;
+}
+
+.general-skills {
+	margin-top: 4rem;
+}
+

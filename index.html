@@ -8,17 +8,22 @@
 		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 		<!-- Font Awesome-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Styles-->
 		<link rel="stylesheet" href="assets/css/styles.css">
 	</head>
 	<body>
 		<!-- NAVBAR   -->
 		<header>
-			<nav class="navbar">
+			<nav class="navbar" id="myTopnav">
 				<a href="#home" class="active">INÍCIO</a>
 				<a href="#resume">RESUMO</a>
 				<a href="#portfolio">PORTFÓLIO</a>
 				<a href="#contact">CONTATO</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
 			</nav>
 		</header>
 		<div id="content">
@@ -70,8 +75,9 @@
 				<!-- Opcao de Baixar o curriculum -->
 				<button class="cv">Baixar CV</button>
 				
-				<div class="education">
-
+				
+			</div>
+			<div class="education">
 					<h3>Educação & Experiência</h3>
 					<div class="group-cards">
 						<div class="card">
@@ -107,8 +113,8 @@
 							<p>Desenvolvimento mobile nativo com Xamarin.</p>
 						</div>
 					</div>
-					
-					<div class="general-skills">
+				</div>
+				<div class="general-skills">
 						<h3>Habilidades Gerais</h3>
 						<div class="group-cards">
 							<div class="card">
@@ -133,9 +139,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-
-			</div>
 			<!-- PORTFOLIO   -->
 			<div id="portfolio">
 				<h3>Projetos</h4>
@@ -201,5 +204,7 @@
 				</form>
 			</div> --> 
 		</div>
+		<script src="assets/js/scripts.js">>
+		</script>
 	</body>
 </html> 

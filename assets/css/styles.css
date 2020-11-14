@@ -9,8 +9,8 @@
 	--red: #ef0730;
 	--white: #fff;
 	--black: #121110;
-	--gray: #e6e5e5;
-	--light-gray: #f2f2f5;
+	--gray: #f5f5f5;
+	--light-gray: #f9f9f9;
 } 
 
 a {
@@ -22,14 +22,10 @@ p {
 	font-weight: normal;
 }
 
-hr {
-	border: 1px solid black;
-}
-
 
 /*  NAVBAR */
 header {
-	background-color: var(--white);
+	background-color: var(--light-gray);
 	margin-bottom: 2rem;
 }
 
@@ -39,20 +35,12 @@ header a {
 
 
 body {
-	font-family: 'Roboto', sans-serif;
-	padding: 2.5rem 6rem;
-	/*background-color: var(--gray);*/
 	background-color: var(--gray);
 	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;
 }
 
-#resume,
-#home,
-#portfolio,
-#contact {
-	padding: 4rem 6rem 4rem 4rem;
-}
 
 .navbar {
 	padding: 0 3rem;
@@ -76,11 +64,22 @@ body {
 	color: var(--red);
 }
 
+.navbar .icon {
+	display: none;
+}
+
+
 #content {
-	background-color: var(--light-gray);
+	margin: 4rem 6rem 4rem 4rem;
+	padding: 2rem;
+	background-color: var(--white);
 }
 
 /*  HOME */
+#home,
+#resume {
+	padding: 1rem;
+}
 #home {
 	display: flex;
 	justify-content: space-between;
@@ -122,6 +121,11 @@ button {
 }
 
 /*  RESUME*/
+
+#resume {
+	margin: 5rem 0;
+}
+
 .resume-text h4,
 .resume-text p {
 	margin-bottom: 2rem;
@@ -150,24 +154,24 @@ button {
 }
 
 .social-network .fab {
-	padding: 0.8rem;
-	margin-right: 1rem;
+	margin-right: 2rem;
 	font-size: 1.4rem;
 	background-color: var(--white);
 	color: var(--black);
 }
 
-.education {
-	margin-top: 5rem;
+.education,
+.general-skills {
+	margin: 5rem 0;
+	/*margin-top: 5rem;*/
 }
 
-.education h3 {
-	
-}
 
 .education h3,
+.general-skills h3,
 #portfolio h3 {
 	margin-bottom: 2rem;
+	padding: 1rem;
 	font-weight: bold;
 	font-size: 1.6rem;
 }
@@ -175,7 +179,7 @@ button {
 .group-cards {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: 1rem 1rem;
+	grid-gap: 2rem 2rem;
 
 }
 
@@ -203,5 +207,35 @@ button {
 
 .general-skills {
 	margin-top: 4rem;
+}
+
+
+
+/*  Responsividade  */
+
+@media (max-width: 425px) {
+	.group-cards {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) { 
+	#content {
+		margin: 0;
+	}
+
+	.home-image{
+		display: none;
+	}
+
+	.resume-data {
+		grid-template-columns: auto;
+		grid-row-gap: 2rem;
+	}
+
+	.group-cards {
+		grid-template-columns: auto auto;
+	}
 }
 

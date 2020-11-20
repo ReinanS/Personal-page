@@ -5,26 +5,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Reinan Santos</title>
 		<!-- Google Fonts-->
-		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Bad+Script&family=Roboto&display=swap" rel="stylesheet">
 		<!-- Font Awesome-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Styles-->
 		<link rel="stylesheet" href="assets/css/styles.css">
 	</head>
 	<body>
 		<!-- NAVBAR   -->
 		<header>
-			<nav class="navbar" id="myTopnav">
-				<a href="#home" class="active">INÍCIO</a>
-				<a href="#resume">RESUMO</a>
-				<a href="#portfolio">PORTFÓLIO</a>
-				<a href="#contact">CONTATO</a>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-					<i class="fa fa-bars"></i>
-				</a>
+			<nav class="topnav" >
+				<nav id="navBrand">
+					<a href="#home">Reinan Santos</a>
+				</nav>
+				<nav class="navItems" id="myTopnav">
+					<a href="#resume">RESUMO</a>
+					<a href="#portfolio">PORTFÓLIO</a>
+					<a href="#contact">CONTATO</a>
+				</nav>		
 			</nav>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fas fa-bars"></i>
+			</a>
 		</header>
 		<div id="content">
 			<!-- HOME   -->
@@ -33,7 +35,7 @@
 					<h4>Bem-Vindo ao meu portifólio.</h4>
 					<h1>O trabalho de um <span>desenvolvedor</span> não é meramente escrever linhas de código, mas <span>resolver problemas</span>.</h1>
 					<p>Sou um jovem estudante iniciando no desenvolvimento Web e mobile.</p>
-					<button>Começar</button>
+					<button><a href="#resume">Começar</a></button>
 				</div>
 				<figure class="home-image">
 					<!-- Adição de uma foto minha -->

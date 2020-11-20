@@ -22,17 +22,18 @@ p {
 	font-weight: normal;
 }
 
-
 /*  NAVBAR */
 header {
 	background-color: var(--light-gray);
 	margin-bottom: 2rem;
+
+	display: flex;
+	justify-content: space-between;
 }
 
 header a {
 	color: var(--black);
 }
-
 
 body {
 	background-color: var(--gray);
@@ -41,33 +42,57 @@ body {
 	line-height: 1.5;
 }
 
-
-.navbar {
-	padding: 0 3rem;
-	width: 50%;
-
+.topnav {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap; 
 }
 
-.navbar a {
+#navBrand {
+	padding: 1rem 4rem;
+}
+
+#navBrand a {
+	font-family: 'Bad Script', cursive;
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+
+#navBrand a:hover {
+	color: var(--red);
+}
+
+.navItems {
+	padding: 0 3rem;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	/*flex-wrap: wrap;*/
+}
+
+.navItems a {
 	color: var(--black);
 	padding: 1rem;
 }
 
-.navbar a:hover{
+.navItems a:hover{
+	color: var(--red);
+	border-bottom: 3px solid var(--red);
+}
+
+.navItems .active{
 	color: var(--red);
 }
 
-.navbar .active{
-	color: var(--red);
-}
-
-.navbar .icon {
+header .icon .fas {
 	display: none;
+	padding: 1.3rem;
+	font-size: 1.5rem;
 }
 
+header .icon .fas:hover {
+	color: var(--red);
+}
 
 #content {
 	margin: 4rem 6rem 4rem 4rem;
@@ -80,6 +105,7 @@ body {
 #resume {
 	padding: 1rem;
 }
+
 #home {
 	display: flex;
 	justify-content: space-between;
@@ -107,10 +133,7 @@ body {
 	border-radius: 50%;
 }
 
-/*#home button {
-	margin-top: 2.5rem;
-} */
-
+#home a,
 button {
 	margin-top: 2.5rem;
 	padding: 0.5rem 1.2rem;
@@ -138,12 +161,7 @@ button {
 	justify-content: space-between;
 }
 
-.icon {
-	display: flex;
-	align-items: ;
-}
-
-.icon .fas {
+.content .icon .fas {
 	font-size: 1.1rem;
 	margin-right: 0.5rem;
 	color: var(--red);
@@ -214,6 +232,25 @@ button {
 /*  Responsividade  */
 
 @media (max-width: 425px) {
+
+	.topnav {
+		flex-direction: column;
+	}
+
+
+	.navItems {
+		display: none;
+	}
+
+	header .icon .fas {
+		display: block;
+	}
+
+	.navItems.responsive{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	.group-cards {
 		display: flex;
 		flex-direction: column;
